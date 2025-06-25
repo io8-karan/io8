@@ -1,95 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./favicon/favicon.jpg" type="image/png" />
-    <title>Table</title>
+    <title>Time Table</title>
     <style>
-      th,
-      td {
-        border: 1px solid #dedfde;
-      }
-      .main-container {
-        border: 1px solid black;
-        margin-left: 350px;
-        margin-right: 500px;
-        padding: 5px;
-      }
-      .user img {
-        width: 100px;
-        height: 100px;
-      }
+       
+        table{
+            border: 4px solid rgb(4, 0, 0);
+            border-collapse: collapse;
+        margin-left: 80px;
+            height: 600px;
+            width: 90%;
+        }
+        th,td{
+            padding: 15px;;
+border: 2px solid black;
+text-align: center;
+        }
     </style>
-  </head>
-  <body>
-    <main class="main-container">
-      <h1>Flower of the week</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Flower</th>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Height</th>
-            <th>Season</th>
-            <th>Conditions</th>
-            <th>Image</th>
-          </tr>
-          <tr>
-            <td>Butterfly Bush</td>
-            <td>Buddleja davidii</td>
-            <td>$3.45</td>
-            <td>4.5m</td>
-            <td>Summer</td>
-            <td>dry sun</td>
-            <td>
-              <div class="user">
-                <img src="./images/butterfly bush.jpg" alt="Butterfly Bush" />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Pineapple broom</td>
-            <td>Cytisus battandieri</td>
-            <td>$5</td>
-            <td>4.5m</td>
-            <td>Early Summer</td>
-            <td>dry sun</td>
-            <td>
-              <div class="user">
-                <img src="./images/pineapple broom.jpg" alt="Pineapple broom" />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Peony</td>
-            <td>Paeonia lactiflora hybrids</td>
-            <td>$2.15</td>
-            <td>60cm</td>
-            <td>Summer</td>
-            <td>Shade</td>
-            <td>
-              <div class="user">
-                <img src="./images/peony.jpg" alt="Peony" />
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>Hollyhock</td>
-            <td>Alcea rosea</td>
-            <td>$2.00</td>
-            <td>2.5m</td>
-            <td>Summer</td>
-            <td>Clay Red</td>
-            <td>
-              <div class="user">
-                <img src="./images/holly hock.jpg" alt="Hollyhock" />
-              </div>
-            </td>
-          </tr>
-        </thead>
-      </table>
+</head>
+<body>
+    <main>
+        <h1 style="text-align: center">Time Table</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day/Period</th>
+                    <th>I</br>9.30-10.20</th>
+                    <th>II</br>10.20-11.10</th>
+                    <th>III</br>11.10-12.00</th>
+                    <th>12.00-12.40</th>
+                    <th>IV</br>12.40-1.30</th>
+                    <th>V</br>1.30-2.20</th>
+                    <th>VI</br>3.20-3.10</th>
+                    <th>VII</br>3.10-4.00</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Monday</strong></td>
+                    <td>Eng</td>
+                    <td>Mat</td>
+                    <td>Che</td>
+                    <td rowspan="6"><strong>L</br>U</br>N</br>C</br>H</br></strong></td>
+                    <td colspan="3">LAB</td>
+                    <td>Phy</td>
+                </tr>
+                 <tr>
+                    <td><strong>Tuesday</strong></td>
+                    <td colspan="3">LAB</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td>SPORTS</td>
+                </tr>
+                 <tr>
+                    <td><strong>Wednesday</strong></td>
+                    <td>Mat</td>
+                    <td>phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LIBRARY</td>
+                </tr>
+                 <tr>
+                    <td><strong>Thursday</strong></td>
+                    <td>Phy</td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td colspan="3">LAB</td>
+                    <td>Mat</td>
+                </tr>
+                 <tr>
+                    <td><strong>Friday</strong></td>
+                    <td colspan="3">LAB</td>
+                    <td>Che</td>
+                    <td>Eng</td>
+                    <td>Phy</td>
+                </tr>
+                 <tr>
+                    <td><strong>Saturday</strong></td>
+                    <td>Eng</td>
+                    <td>Che</td>
+                    <td>Mat</td>
+                    <td colspan="3">SEMINAR</td>
+                    <td>SPORTS</td>
+                </tr>
+            </tbody>
+        </table>
     </main>
-  </body>
+</body>
 </html>
