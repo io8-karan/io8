@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invader Tech Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      img {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+      }
+      .nav {
+        margin-left: 200px;
+      }
+      .nav li {
+        text-decoration: none;
+        display: inline;
+        padding: 10px;
+      }
+      .text {
+        color: white;
+        text-align: center;
+        border-left: 1px solid white;
+      }
+      .container {
+        background-color: #003d73;
+      }
+      .main-nav {
+        background-color: white;
+        border: 3px solid whitesmoke;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+      }
+
+      .logo img {
+        height: 70px;
+        width: 130px;
+        margin-left: 100px;
+      }
+
+      .nav-menu {
+        list-style: none;
+        display: flex;
+        gap: 2px;
+      }
+
+      .nav-menu li a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 15px;
+        border-left: 1px solid black;
+        padding: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top contact bar -->
+    <div class="top-bar">
+      <div class="container">
+        <ul class="nav">
+          <li class="img">
+            <img src="../asset/telephone (1).png" alt="telephone" />
+          </li>
+          <li class="text">8795462541</li>
+          <li class="img"><img src="../asset/email.png" alt="email" /></li>
+          <li class="text">support@invaderttech.com</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Main navigation -->
+    <nav class="main-nav">
+      <div class="nav-content">
+        <div class="logo">
+          <img src="../asset/invader_logo.png" alt="Invader Logo" />
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#" style="border-left: none">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Awards & Training</a></li>
+          <li><a href="#">Clientele</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li>
+            <a href="#" style="margin-right: 470px">E-Waste Management</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>

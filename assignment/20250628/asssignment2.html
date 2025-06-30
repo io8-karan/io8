@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      main {
+        background-color: black;
+        font-size: 0;
+      }
+      .item {
+        font-size: initial;
+        background-color: black;
+        display: inline-block;
+        margin-top: 15px;
+        height: 170px;
+        width: 170px;
+      }
+      .item-1 {
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-1 img {
+        width: 100px;
+        height: 100px;
+        border-style: none;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+      }
+      .item-2 {
+        background-color: green;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      .item-4 {
+        background-color: green;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      .item-6 {
+        background-color: green;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      .item-8 {
+        background-color: green;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      .item-3 {
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-5 {
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-7 {
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-10 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-11 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-12 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-13 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-15 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-16 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-18 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-19 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-21 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-24 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-25 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-27 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-28 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-29 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-30 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-31 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-32 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-33 {
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-35 {
+        background-color: red;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-36 {
+        background-color: green;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      .item-38 {
+        background-color: green;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+      }
+      .item-43 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-45 {
+        background-color: blueviolet;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+      .item-49 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-52 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-56 {
+        background-color: rgb(175, 129, 217);
+        border-radius: 50%;
+      }
+      .item-62 {
+        background-color: rgb(111, 232, 111);
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-top-left-radius: 50%;
+      }
+      .item-13 img {
+        position: absolute;
+        top: 230px;
+        left: 722px;
+      }
+      .item-18 img {
+        position: absolute;
+        top: 420px;
+        left: 200px;
+      }
+      .item-21 img {
+        position: absolute;
+        top: 420px;
+        left: 710px;
+      }
+      .item-45 img {
+        position: absolute;
+        top: 985px;
+        left: 725px;
+      }
+      .item-52 img {
+        position: absolute;
+        top: 1165px;
+        left: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div class="item item-1">
+          <img src="../asserts/8.webp" />
+        </div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+        <div class="item item-7"></div>
+        <div class="item item-8"></div>
+        <div class="item item-9"></div>
+        <div class="item item-10"></div>
+        <div class="item item-11"></div>
+        <div class="item item-12"></div>
+        <div class="item item-13">
+          <img src="../asserts/bread berrel.jpg" width="100px" height="100px" />
+        </div>
+        <div class="item item-14"></div>
+        <div class="item item-15"></div>
+        <div class="item item-16"></div>
+        <div class="item item-17"></div>
+        <div class="item item-18">
+          <img src="../asserts/icec.jpg" width="100px" height="100px" />
+        </div>
+        <div class="item item-19"></div>
+        <div class="item item-20"></div>
+        <div class="item item-21">
+          <img src="../asserts/8.webp" width="100px" height="100px" />
+        </div>
+      <div class="item item-22"></div>
+      <div class="item item-23"></div>
+      <div class="item item-24"></div>
+      <div class="item item-25"></div>
+      <div class="item item-26"></div>
+      <div class="item item-27"></div>
+      <div class="item item-28"></div>
+      <div class="item item-29"></div>
+      <div class="item item-30"></div>
+      <div class="item item-31"></div>
+      <div class="item item-32"></div>
+      <div class="item item-33"></div>
+      <div class="item item-34"></div>
+      <div class="item item-35"></div>
+      <div class="item item-36"></div>
+      <div class="item item-37"></div>
+      <div class="item item-38"></div>
+      <div class="item item-39"></div>
+      <div class="item item-40"></div>
+      <div class="item item-41"></div>
+      <div class="item item-42"></div>
+      <div class="item item-43"></div>
+      <div class="item item-44"></div>
+      <div class="item item-45">
+        <img src="../asserts/crab cake.jpg" width="100px" height="100px" />
+      </div>
+      <div class="item item-46"></div>
+      <div class="item item-47"></div>
+      <div class="item item-48"></div>
+      <div class="item item-49"></div>
+      <div class="item item-50"></div>
+      <div class="item item-51"></div>
+      <div class="item item-52">
+         <img src="../asserts/crab cake.jpg" width="100px" height="100px" />
+      </div>
+      <div class="item item-53"></div>
+      <div class="item item-54"></div>
+      <div class="item item-55"></div>
+      <div class="item item-56"></div>
+      <div class="item item-57"></div>
+      <div class="item item-58"></div>
+      <div class="item item-59"></div>
+      <div class="item item-60"></div>
+      <div class="item item-61"></div>
+      <div class="item item-62"></div>
+      <div class="item item-63"></div>
+      <div class="item item-64"></div>
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
