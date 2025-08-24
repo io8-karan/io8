@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      *{
+        margin: 0%;
+        padding: 0%;
+      }
+      body {
+        background-color: #ffffff;
+      }
+      h2{
+        text-align: center;
+       margin-bottom: 15px;
+          background-color:#dfc5f2;
+      }
+      .form{
+        padding: 32px;
+        border: 1px solid black;
+        color: black;
+        background-color: #dfc5f2;
+     }
+     .name1{
+        width: 47%;
+        margin-left:45px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+    .dob{
+        width: 47%;
+        margin-left:30px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+    .email{
+        width: 47%;
+        margin-left:76px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+      .m{
+        margin-left:120px;
+      }
+      .gender{
+        margin-left:15px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+
+    }
+      .address{
+         margin-left:62px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+        height: 80px;
+        width:40%;      
+      }
+      .cities{
+        width: 47%;
+        margin-left:86px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+    .pincode{
+      width: 47%;
+        margin-left:62px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+    .states{
+        width: 47%;
+        margin-left:83px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+      .country{
+        width: 47%;
+        margin-left:62px;
+      margin-top: 20px;
+    margin-bottom: 5px;
+    }
+    
+.hobbies{
+ margin-left:50px;
+      margin-top: 10px;
+    margin-bottom: 5px;
+    }
+    .hobby{
+      margin-left: 68px;
+    }
+.hobbiesothers{
+        margin-left:115px;
+      margin-top: 10px;
+    }
+.quali {
+display: flex;
+    margin-left:15px;
+    gap: 124px;
+}
+.tenth{
+display: flex;
+    margin-left: 10px;
+    gap: 10px;
+}
+.tenthinput{
+  margin-left: 36px;
+}
+.class{
+  display: flex;
+  margin-top: 5px;
+}
+.tweleveinput{
+  margin-left: 25px;
+}
+.graduationinput{
+  margin-left: 15px;
+}
+.mastersinput{
+  margin-left: 36px;
+}
+.max{
+  margin-left: 130px;
+  margin-top: 10px;
+  
+}
+.course{
+ 
+      margin-top: 30px;
+    margin-bottom: 5px;
+    }
+    .choices{
+        margin-left: 42px;
+       
+      }
+      .button{
+       width: 30%;
+       margin: auto;
+     margin-top: 20px;
+     color: black ;
+      }
+      .reset{
+        padding:3px;
+        margin-left: 20px;
+        background-color: rgb(180, 210, 248);
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .save{
+         padding:3px;
+        margin-left: 20px;
+        background-color: rgb(180, 210, 248);
+      border-radius: 5px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .image-container img
+      {
+        width: 100%;
+        height: 100%;
+    }
+  
+      .main-container
+    {
+      display: flex;
+      
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="main-container">
+      <div class="image-container">
+        <img src="https://images.unsplash.com/photo-1581215524789-83361d941827?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image"/>
+      </div>
+    <div class="fullform">
+
+      <form class="form">
+        <h2>Student Registration Form</h2>
+        <div>
+          <label for="firstname">First Name</label>
+          <input id="firstname" type="text"class="name1" autocomplete="on"/>(max 30 characters a-z and A-Z)
+        </div>
+        <div>
+         <label for="lastname">Last Name</label>
+         <input id="lastname" type="text"class="name1" autocomplete="off"/>(max 30 characters a-z and A-Z)
+        </div>
+        <div>
+          <label for="birth">Date of Birth</label>
+          <input id="birth" type="date" class="dob" />
+        </div>
+        <div>
+         <label for="email">Email</label>
+         <input id="email" type="email" class="email"  autocomplete="off"/>
+        </div>
+        <div>
+         <label for="mobile">Mobile no.</label>
+         <input id="mobile" type="text"class="name1" autocomplete="off" maxlength="10" pattern="[0-9]{10}" required />
+        </div>
+         <label>Gender</label>
+        <div>
+         <label for="male" class="m">Male</label>
+         <input id="male" type="radio" class="gender"/>
+         <label for="female" class="m">Female</label>
+         <input id="female" type="radio" class="gender"/>
+        </div>
+        <div>
+         <label for="address">Address</label>
+         <textarea id="address" type="textarea" class="address" autocomplete="off" rows="4" cols="50">
+
+         </textarea>
+        </div>
+        <div>
+         <label for="city">City</label>
+         <input id="city" type="text" class="cities"/>(max 30 characters a-z and A-Z)
+        </div>
+        <div>
+         <label for="pincode">Pincode</label>
+         <input id="pincode" type="text" class="pincode" maxlength="6" pattern="[0-9]{6}" required/>(6 digit number)
+        </div>
+        <div>
+         <label for="state">State</label>
+         <input id="state type="text" class="states"/>(max 30 characters a-z and A-Z)
+        </div>
+        <div>
+         <label for="country">Country</label>
+         <input id="country" type="text" class="country"/>
+        </div>
+         <label>Hobbies</label>
+        <div class="hobbies">
+         <label for="drawing" class="hobby">Drawing</label>
+         <input id="drawing" type="checkbox" />
+         <label for="singing" class="hobby">Singing</label>
+         <input id="singing" type="checkbox" />
+         <label for="dancing" class="hobby">Dancing</label>
+         <input id="dancing" type="checkbox" />
+         <label for="sketches" class="hobby">Sketches</label>
+         <input id="sketches" type="checkbox" />
+        </div>
+        <div class="hobbiesothers">
+         <label for="others">Others</label>
+         <input id="others" type="checkbox" />
+        </div>
+        <label>Qualification</label>
+        <div style="margin-top: 15px;">
+         <div class="quali">
+          <label>SI.No. Examination</label>
+          <label>Board</label>
+          <label>Percentage</label>
+          <label>Year of Passing</label>
+         </div>
+        </div>
+        <div class="class">
+          <div class="tenth">
+           <label>1.</label>
+           <label>Class X</label>
+          </div>
+          <div class="tenthinput">
+            <input type="text" />
+            <input type="number" />
+            <input type="number" />
+          </div>
+        </div>
+        <div class="class">
+          <div class="tenth">
+            <label>2.</label>
+            <label>Class XII</label>
+          </div>
+          <div class="tweleveinput">
+           <input type="text" />
+           <input type="number" />
+           <input type="number" />
+          </div>
+        </div>
+        <div class="class">
+          <div class="tenth">
+           <label>3.</label>
+           <label>Graduation</label>
+          </div>
+          <div class="graduationinput">
+            <input type="text" />
+           <input type="number"/>
+           <input type="number" />
+          </div>
+        </div>
+        <div class="class">
+          <div class="tenth">
+           <label>4.</label>
+           <label>Masters</label>
+          </div>
+          <div class="mastersinput">
+           <input type="text" />
+           <input type="number" />
+           <input type="number" />
+          </div>
+        </div>
+        <div class="max">
+          <label>(10 char max)</label>
+          <label style="margin-left: 70px;">(upto 2 decimal)</label>
+        </div>
+        <div class="course">
+          <label>COURSE</br> APPLIED FOR</label>
+          <label for="drawing" class="choices">BCA</label>
+          <input id="drawing" type="radio" />
+          <label for="singing" class="choices">B.Com</label>
+          <input id="singing" type="radio" />
+          <label for="dancing" class="choices">B.Sc</label>
+          <input id="dancing" type="radio" />
+          <label for="sketches" class="choices">B.A</label>
+          <input id="sketches" type="radio" />
+        </div>
+        <div class="button">
+          <input type="submit" value="Submit"  class="save"/>
+          <input type="reset" value="Reset" class="reset"/>
+        </div>
+      </form>
+    </div>
+  </div>
+      </main>
+      </body>
+      </html>
