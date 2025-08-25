@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form 2</title>
+    <link rel="stylesheet" href="../form/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Basic HTML Form</h1>
+      <fieldset class="fieldset">
+        <legend>Name</legend>
+        <label for="firstname">First name</label>
+        <br />
+        <input type="text" id="firstname" class="name" disabled />
+        <br />
+        <label for="lastname">Last name</label>
+        <br />
+        <input type="text" id="lastname" class="name" disabled />
+      </fieldset>
+      <fieldset class="fieldset">
+        <legend>Other Question</legend>
+        <label for="choice">Choose a drink</label>
+        <br />
+        <div class="choices">
+          <input type="radio" id="choice" />
+          <label for="choice">coffee</label>
+          <br />
+          <input type="radio" id="choice" />
+          <label for="choice">tea</label>
+          <br />
+          <input type="radio" id="choice" />
+          <label for="choice">hot chocolate</label>
+          <br />
+        </div>
+        <label>what ice cream do you like?</label>
+        <div class="choices">
+          <input type="checkbox" id="choice" />
+          <label for="choice">chocalate</label>
+          <br />
+          <input type="checkbox" id="choice" />
+          <label for="choice">chocolate pudding </label>
+          <br />
+          <input type="checkbox" id="choice" />
+          <label for="choice">chocolate peanut butter</label>
+          <br />
+          <input type="checkbox" id="choice" />
+          <label for="choice">vanilla</label>
+          <br />
+          <input type="checkbox" id="choice" />
+          <label for="choice">strawberry</label>
+          <br />
+        </div>
+        <div class="choices">
+          <label>Select a School:</label>
+          <br />
+          <input
+            list="schools"
+            name="schools"
+            id="selection"
+            disabled
+            placeholder="Harvard"
+          />
+          <datalist id="schools">
+            <option>School of Business</option>
+            <option>School of Computing</option>
+            <option>School of Engineering</option>
+            <option>Harvard</option>
+          </datalist>
+        </div>
+        <div class="choices">
+          <label>Please provide comments:</label>
+          <br />
+          <textarea rows="4" cols="30"></textarea>
+        </div>
+      </fieldset>
+      <input type="submit" value="Submit" class="submit" disabled />
+    </div>
+  </body>
+</html>

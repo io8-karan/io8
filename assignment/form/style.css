@@ -1,0 +1,20 @@
+.container {
+  width: 32%;
+  margin: auto;
+  border: 1px solid black;
+  padding: 10px;
+}
+.fieldset {
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.name {
+  margin: 5px 0px;
+}
+.choices {
+  margin-bottom: 19px;
+}
+.submit {
+  width: 25%;
+}
